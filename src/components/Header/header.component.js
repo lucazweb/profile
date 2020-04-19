@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import { Row, Col } from 'react-flexbox-grid';
+import { H1, Menu } from '..';
+import { StyledH1 } from './header.styled';
 import { LocaleContext } from  '../../Locale.context';
 
 export const Header = props => {
@@ -7,7 +9,7 @@ export const Header = props => {
     const nextLocale = locale === "en" ? "pt" : "en";
 
     return (
-        <Row>
+        <Row end="md">
             <Col xs={12} md={12}>
                 <button onClick={() => setLocale(nextLocale)}> 
                     { 
@@ -20,3 +22,14 @@ export const Header = props => {
         </Row>
     )
 }
+
+export const SecondaryHeader = () => (
+  <Row style={{marginBottom: 16, borderBottom: '1px solid #333'}} start="md">
+    <Col md={12}>
+      <StyledH1>Lucas Santos . Front-End Engineer</StyledH1>
+    </Col>
+    <Col md={12}>
+      <Menu />
+    </Col>
+  </Row>  
+);

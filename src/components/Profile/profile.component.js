@@ -1,6 +1,13 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import { FormattedMessage, defineMessage } from 'react-intl';
+import { 
+  ProfileRow, 
+  ProfilePhoto, 
+  StyledParagraph, 
+  StyledTitle 
+} from './profile.styled';
+import { Menu } from '../Menu/menu.component';
 
 const messages = defineMessage({
     welcome: {
@@ -14,17 +21,26 @@ const messages = defineMessage({
 })
 
 export const Profile = () => (
-    <Row>
+    <ProfileRow middle="md">
         <Col md={4}>
-            Image
+          <ProfilePhoto />
         </Col>
+
         <Col md={8}>
-            <h1>
-                <FormattedMessage {...messages.welcome } />
-            </h1>
-            <p>
-                <FormattedMessage {...messages.profile } />
-            </p>
+          <StyledTitle>
+            <FormattedMessage {...messages.welcome } />
+          </StyledTitle>
+
+          <StyledParagraph>
+            <FormattedMessage {...messages.profile } />
+          </StyledParagraph>
+
+          <Row>
+            <Col xs={12} md={12}>
+              <Menu />
+            </Col>
+          </Row>
         </Col>
-    </Row>
+
+    </ProfileRow>
 );

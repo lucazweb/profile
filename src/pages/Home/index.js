@@ -1,11 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
-import { Header } from '../../components/Header';
-import { Profile } from '../../components/Profile';
+import { Header, Profile } from '../../components';
 
 const Home = () => (
-    <Row center="md">
-        <Col xs={12} sm={12} md={10}>
+    <Row center="xs">
+        <Col xs={10} sm={10} md={10}>
             <Header />
             <Profile />
         </Col>

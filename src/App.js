@@ -4,6 +4,7 @@ import { IntlProvider } from 'react-intl';
 import { LocaleContext } from './Locale.context';
 import en from './translations/en.json';
 import pt from './translations/pt.json';
+import './global.css';
 
 const App = () => {
   const [locale] = useContext(LocaleContext);
