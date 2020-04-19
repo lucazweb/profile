@@ -5,7 +5,7 @@ import { Space } from '..'
 export const TimelineList =  styled.div`
   ul{
     list-style-type: none;
-    margin:  ${Space.large}px 0 0 0;
+    margin:  ${Space.medium}px 0 0 0;
     padding: 0;
     position: relative;
     transition: all 0.5s linear;

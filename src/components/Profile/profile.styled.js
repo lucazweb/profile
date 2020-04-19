@@ -8,8 +8,8 @@ export const ProfileRow = styled(Row)`
 `;
 
 export const ProfilePhoto = styled.div`
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     background-color: #f3f3f3;
     background-image: url('${photo}');
     background-size: cover;

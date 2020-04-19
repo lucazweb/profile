@@ -1,3 +1,9 @@
 {
-    "Welcome": "Olá, sou natural de Salvador, Bahia!"
+    "Welcome": "Olá, sou natural de Salvador, Bahia!",
+    "ProfessionalCategoryTitle": "Experiência profissional",
+    "SkillsCategoryTitle": "Skills",
+    "ProjectsCategoryTitle": "Alguns projetos",
+    "RoleTitle": "Lucas Santos . Desenvolvedor Front-End",
+    "ResumeLink": "Currículo",
+    "AboutLink": "Sobre"
 }

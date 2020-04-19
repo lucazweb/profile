@@ -1,7 +1,20 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { FormattedMessage, defineMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { StyledList, StyledListItem, ExternalLink } from './menu.styled';
+import resumePdfFile from '../../assets/lucas_santos_resume.pdf';
+
+const messages = defineMessage({
+  aboutLink: {
+    id: "AboutLink",
+    defaultMessage: "About"
+  },
+  resumeLink: {
+    id: "ResumeLink",
+    defaultMessage: "Resume"
+  },
+});
 
 export const Menu = () => {
   const location = useLocation();
@@ -19,13 +32,17 @@ export const Menu = () => {
       {
         location.pathname !== '/about' && (
           <StyledListItem>
-            <Link to='/about'> About </Link>
+            <Link to='/about'> 
+              <FormattedMessage {...messages.aboutLink } />
+            </Link>
           </StyledListItem>
         )
       }
 
       <StyledListItem>
-        <Link> Resume </Link>
+        <ExternalLink href={resumePdfFile} target="_blank"> 
+        <FormattedMessage {...messages.resumeLink } />
+        </ExternalLink>
       </StyledListItem>
   
       <StyledListItem>

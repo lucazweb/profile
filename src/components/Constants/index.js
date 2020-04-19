@@ -1,6 +1,7 @@
 export const Color = {
   textColor: '#333',
-  highlight: '#fad86f'
+  highlight: '#fad86f',
+  textLinkHover: '#0074D9'
 };
 
 export const Space = {
