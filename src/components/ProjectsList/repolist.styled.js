@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Space } from '..';
+import { Space, Color } from '..';
 
 export const RepoList =  styled.ul`
   margin: ${Space.medium}px 0 0 0; 
@@ -12,10 +12,14 @@ export const RepoListItem = styled.li`
   text-align: left;
   padding: 14px;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   margin-bottom: ${Space.medium}px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  &:hover {
+    border-color: ${Color.textLinkHover};
+    color:${Color.textLinkHover};
+  }
 `;
 
 export const RepoTitle = styled.h3`

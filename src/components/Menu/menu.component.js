@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLocation } from 'react-router-dom';
+import { LocaleContext } from '../../Locale.context';
 import { FormattedMessage, defineMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 import { StyledList, StyledListItem, ExternalLink } from './menu.styled';
 import resumePdfFile from '../../assets/lucas_santos_resume.pdf';
+import resumePdfFileBR from '../../assets/lucas_santos_front_end_cv.pdf';
 
 const messages = defineMessage({
   aboutLink: {
@@ -17,9 +19,10 @@ const messages = defineMessage({
 });
 
 export const Menu = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [locale, setLocale] = useContext(LocaleContext);
   const location = useLocation();
   return (
-  
     <StyledList>
       {
         location.pathname !== '/' && (
@@ -40,7 +43,7 @@ export const Menu = () => {
       }
 
       <StyledListItem>
-        <ExternalLink href={resumePdfFile} target="_blank"> 
+        <ExternalLink href={ locale === 'en' ? resumePdfFile : resumePdfFileBR } target="_blank"> 
         <FormattedMessage {...messages.resumeLink } />
         </ExternalLink>
       </StyledListItem>

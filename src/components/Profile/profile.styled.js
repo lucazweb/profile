@@ -17,7 +17,7 @@ export const ProfilePhoto = styled.div`
     border-radius: 50%;
     border: 4px solid #333;
     box-sizing: content-box;
-    filter: sepia(.6);
+    //filter: sepia(.6);
 `;
 
 export const StyledParagraph = styled.p`

@@ -3,7 +3,7 @@ import { Space } from '..';
 
 export const SkillList = styled.ul`
   margin: ${Space.medium}px 0 0 0;
-  padding: 0;
+  padding: 0 12px;
   list-style:none;
 `;
 

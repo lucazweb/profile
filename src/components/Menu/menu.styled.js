@@ -33,4 +33,8 @@ export const StyledListItem = styled.li`
 
 export const ExternalLink = styled.a`
   text-decoration: none;
+  color: #333;
+  &:visited {
+    color: #333;
+  }
 `;

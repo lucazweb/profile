@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Space } from '..'
+import { Space, Color } from '..'
 
 // Transactions list
 export const TimelineList =  styled.div`
@@ -34,13 +34,26 @@ export const TimelineList =  styled.div`
             text-align: left;
             transition: color ease 0.4s;                   
         }    
+        small {
+          font-weight: bold;
+          color: #444;  
+        }
         p{
           display: block;
-          word-break: break-all;
+          word-break: break-word;
           text-align: left;
           margin-top:2px;
           font-weight: 400;
           font-size: .8rem;
+          line-height: 1.3rem;
+        }
+        a{
+          text-align: left;
+          font-size: .8rem;
+          font-weight: bold;
+          &:hover {
+            color: ${Color.textLinkHover};
+          }
         }
         .price{
             font-size: 1.1em;
@@ -82,6 +95,7 @@ export const TimelineList =  styled.div`
             left:-7px
         }
         &:after{top:95%}
-    }                     
+    } 
+
   }  
 `;
