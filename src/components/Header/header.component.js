@@ -62,7 +62,7 @@ export const SecondaryHeader = () => {
       start="md"
     >
       <ColPositionRelative md={12}>
-        <StyledH1>
+        <StyledH1 style={{ fontSize: "1em" }}>
           <FormattedMessage {...messages.roleTitle} />
         </StyledH1>
         <FloatingTranslateButton onClick={() => setLocale(nextLocale)}>

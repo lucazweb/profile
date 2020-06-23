@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { ExternalLink } from "../Menu/menu.styled";
-import { RepoList, RepoListItem, RepoTitle, RepoDesc } from "./repolist.styled";
+import {
+  RepoList,
+  RepoListItem,
+  RepoTitle,
+  RepoDesc,
+  StyledA,
+} from "./repolist.styled";
 import axios from "axios";
 
 const api = axios.create({
@@ -11,12 +17,10 @@ export const ProjectList = () => {
   const [repos, setRepos] = useState([]);
 
   const showRepos = [
+    "newshub",
     "transactions-manager-app",
     "omnistack-react-app",
-    "hi-beats",
     "star-warjs",
-    //'profile-react-app',
-    "spotify-web-browser",
   ];
 
   useEffect(() => {
@@ -50,6 +54,9 @@ export const ProjectList = () => {
       ) : (
         <span> Nada a exibir </span>
       )}
+      <StyledA href="https://www.github.com/lucazweb" target="_blank">
+        See in Github
+      </StyledA>
     </RepoList>
   );
 };
