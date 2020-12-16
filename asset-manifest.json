@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/profile-react-app/static/css/main.afb711fe.chunk.css",
-    "main.js": "/profile-react-app/static/js/main.7465c2bc.chunk.js",
-    "main.js.map": "/profile-react-app/static/js/main.7465c2bc.chunk.js.map",
-    "runtime-main.js": "/profile-react-app/static/js/runtime-main.938466e7.js",
-    "runtime-main.js.map": "/profile-react-app/static/js/runtime-main.938466e7.js.map",
-    "static/css/2.22d6b5ec.chunk.css": "/profile-react-app/static/css/2.22d6b5ec.chunk.css",
-    "static/js/2.87d144d6.chunk.js": "/profile-react-app/static/js/2.87d144d6.chunk.js",
-    "static/js/2.87d144d6.chunk.js.map": "/profile-react-app/static/js/2.87d144d6.chunk.js.map",
-    "index.html": "/profile-react-app/index.html",
-    "precache-manifest.9acbf38c7993eec0418b00548f22aca7.js": "/profile-react-app/precache-manifest.9acbf38c7993eec0418b00548f22aca7.js",
-    "service-worker.js": "/profile-react-app/service-worker.js",
-    "static/css/2.22d6b5ec.chunk.css.map": "/profile-react-app/static/css/2.22d6b5ec.chunk.css.map",
-    "static/css/main.afb711fe.chunk.css.map": "/profile-react-app/static/css/main.afb711fe.chunk.css.map",
-    "static/js/2.87d144d6.chunk.js.LICENSE.txt": "/profile-react-app/static/js/2.87d144d6.chunk.js.LICENSE.txt",
-    "static/media/lucas_santos_front_end_cv.pdf": "/profile-react-app/static/media/lucas_santos_front_end_cv.7eebf6c5.pdf",
-    "static/media/lucas_santos_resume.pdf": "/profile-react-app/static/media/lucas_santos_resume.6074efc7.pdf",
-    "static/media/lucazweb.jpeg": "/profile-react-app/static/media/lucazweb.0a6724de.jpeg"
+    "main.css": "/profile/static/css/main.afb711fe.chunk.css",
+    "main.js": "/profile/static/js/main.2090b76e.chunk.js",
+    "main.js.map": "/profile/static/js/main.2090b76e.chunk.js.map",
+    "runtime-main.js": "/profile/static/js/runtime-main.cc04c137.js",
+    "runtime-main.js.map": "/profile/static/js/runtime-main.cc04c137.js.map",
+    "static/css/2.22d6b5ec.chunk.css": "/profile/static/css/2.22d6b5ec.chunk.css",
+    "static/js/2.db24c320.chunk.js": "/profile/static/js/2.db24c320.chunk.js",
+    "static/js/2.db24c320.chunk.js.map": "/profile/static/js/2.db24c320.chunk.js.map",
+    "index.html": "/profile/index.html",
+    "precache-manifest.074e2115c55cc02956db3305f1e376ca.js": "/profile/precache-manifest.074e2115c55cc02956db3305f1e376ca.js",
+    "service-worker.js": "/profile/service-worker.js",
+    "static/css/2.22d6b5ec.chunk.css.map": "/profile/static/css/2.22d6b5ec.chunk.css.map",
+    "static/css/main.afb711fe.chunk.css.map": "/profile/static/css/main.afb711fe.chunk.css.map",
+    "static/js/2.db24c320.chunk.js.LICENSE.txt": "/profile/static/js/2.db24c320.chunk.js.LICENSE.txt",
+    "static/media/lucas_santos_front_end_cv.pdf": "/profile/static/media/lucas_santos_front_end_cv.7eebf6c5.pdf",
+    "static/media/lucas_santos_resume.pdf": "/profile/static/media/lucas_santos_resume.6074efc7.pdf",
+    "static/media/lucazweb.jpeg": "/profile/static/media/lucazweb.0a6724de.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.938466e7.js",
+    "static/js/runtime-main.cc04c137.js",
     "static/css/2.22d6b5ec.chunk.css",
-    "static/js/2.87d144d6.chunk.js",
+    "static/js/2.db24c320.chunk.js",
     "static/css/main.afb711fe.chunk.css",
-    "static/js/main.7465c2bc.chunk.js"
+    "static/js/main.2090b76e.chunk.js"
   ]
 }
