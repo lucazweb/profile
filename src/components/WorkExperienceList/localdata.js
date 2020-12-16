@@ -1,27 +1,35 @@
 export const localData = [
   {
-    title: "Devires / QSaúde - Front-End Developer",
-    time: "(Jan 2020 - Atual)",
-    description: "Desenvolvimento de aplicações com uso de ReactJS"
+    title: "Devires / QSaúde",
+    role: "Front-End Developer",
+    time: "(Jan 2020 - May 2020)",
+    description: "React / Typescript applications;",
   },
   {
-    title: "USP - CEPID Neuromat - Front-End Developer",
+    title: "USP - CEPID Neuromat",
+    role: "Front-End Developer",
     time: "(Jun 2019 - Jan 2020)",
-    description: "Criação e manutenção da camada Front-End das aplicações do projeto e sites institucionais."
+    description: "Front-End development; Django / Mezzanine web projects;",
   },
   {
-    title: "Cronapp.io - Front-End Developer",
-    time: "(Jun 2019 - Jan 2020)",
-    description: "Criação estratégica de produtos web / mobile, montagem e suporte Front-End ao produto principal da startup e fábrica de software;"
+    title: "Cronapp.io",
+    role: "Front-End Developer / UI Design",
+    time: "(Fev 2018 - Mai 2019)",
+    description:
+      "UI Design and Front-End Development for software house products, based in AngularJS / Support in the startup's main product",
   },
   {
-    title: "UNIFACS - Web Developer",
-    time: "(Jun 2019 - Jan 2020)",
-    description: "Desenvolvimento de aplicações / soluções para clientes internos e externos; Criação / gerenciamente de sites Wordpress;"
+    title: "Universidade Salvador - UNIFACS",
+    role: "Web Developer",
+    time: "(Fev 2017 - Mar 2018)",
+    description:
+      "Front-End development / Creation of Wordpress based websites and related demands;",
   },
-  // {
-  //   title: "Fundação CECIERJ - Web Designer",
-  //   time: "(Jun 2019 - Jan 2020)",
-  //   description: "Desenvolvimento e manutenção de sites ligados a projetos educacionais da Fundação;"
-  // },
+  {
+    title: "CECIERJ Foundation",
+    role: "Web Desinger",
+    time: "(Mar 2014 - Dez 2017)",
+    description:
+      "UI Design and PHP (Moodle and Wordpress) educational websites; Maintenance of educational websites projects",
+  },
 ];
