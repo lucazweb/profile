@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Color } from '..';
+import { Breakpoint, Color } from '..';
 
 export const StyledList = styled.ul`
   display: flex;
@@ -28,6 +28,12 @@ export const StyledListItem = styled.li`
     text-decoration: none;
     color: ${Color.textColor};
     font-size: .8rem;
+  }
+`;
+
+export const DesktopOnlyLink = styled(StyledListItem)`
+  @media (max-width: ${Breakpoint.sm}em) {
+    display: none;
   }
 `;
 

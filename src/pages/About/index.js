@@ -28,15 +28,19 @@ const messages = defineMessage({
 const About = () => (
   <Row center="xs">
     <Col xs={10} sm={12} md={10}>
-      <SecondaryHeader />
+      <Row>
+        <Col xs={12}>
+          <SecondaryHeader />
+        </Col>
+      </Row>
       <Row between="md">
-        <Col md={5}>
+        <Col md={4}>
           <H3>
             <FormattedMessage {...messages.professionalCatTitle} />
           </H3>
           <ExperienceList />
         </Col>
-        <Col md={4}>
+        <Col md={5}>
           <H3>
             <FormattedMessage {...messages.skillsCatTitle} />
           </H3>

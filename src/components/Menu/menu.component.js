@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { LocaleContext } from "../../Locale.context";
 import { FormattedMessage, defineMessage } from "react-intl";
 import { Link } from "react-router-dom";
-import { StyledList, StyledListItem, ExternalLink } from "./menu.styled";
+import { StyledList, StyledListItem, ExternalLink, DesktopOnlyLink } from "./menu.styled";
 import resumePdfFile from "../../assets/lucas_santos_resume.pdf";
 import resumePdfFileBR from "../../assets/lucas_santos_front_end_cv.pdf";
 
@@ -38,14 +38,14 @@ export const Menu = () => {
         </StyledListItem>
       )}
 
-      <StyledListItem>
+      <DesktopOnlyLink>
         <ExternalLink
           href={locale === "en" ? resumePdfFile : resumePdfFileBR}
           target="_blank"
         >
           <FormattedMessage {...messages.resumeLink} />
         </ExternalLink>
-      </StyledListItem>
+      </DesktopOnlyLink>
 
       <StyledListItem>
         <ExternalLink href="https://www.github.com/lucazweb" target="_blank">

@@ -12,4 +12,5 @@ export const H3 = styled.h3`
   font-family: "Roboto", sans-serif;
   text-align: left;
   font-size: 1.1em;
+  margin-bottom: 28px;
 `;

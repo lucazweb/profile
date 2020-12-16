@@ -9,6 +9,8 @@ import {
   TranslateButton,
   FloatingTranslateButton,
   ColPositionRelative,
+  StyledRow,
+  StyledSpan
 } from "./header.styled";
 
 const messages = defineMessage({
@@ -21,7 +23,7 @@ const messages = defineMessage({
 const TranslateButtonContent = (props) => (
   <React.Fragment>
     <Emoji symbol={props.symbol} label={props.label} />
-    <span> {props.text} </span>
+    <StyledSpan> {props.text} </StyledSpan>
   </React.Fragment>
 );
 
@@ -30,8 +32,8 @@ export const Header = (props) => {
   const nextLocale = locale === "en" ? "pt" : "en";
 
   return (
-    <Row end="sm">
-      <Col xs={3}>
+    <StyledRow center="xs" end="md">
+      <Col xs={12} md={3}>
         <TranslateButton onClick={() => setLocale(nextLocale)}>
           {nextLocale === "pt" ? (
             <TranslateButtonContent
@@ -48,7 +50,7 @@ export const Header = (props) => {
           )}
         </TranslateButton>
       </Col>
-    </Row>
+    </StyledRow>
   );
 };
 
@@ -61,11 +63,11 @@ export const SecondaryHeader = () => {
       style={{ marginBottom: 16, borderBottom: "1px solid #333" }}
       start="md"
     >
-      <ColPositionRelative md={12}>
-        <StyledH1 style={{ fontSize: "1em" }}>
+      <ColPositionRelative xs={12} md={12}>
+        <StyledH1>
           <FormattedMessage {...messages.roleTitle} />
         </StyledH1>
-        <FloatingTranslateButton onClick={() => setLocale(nextLocale)}>
+        <FloatingTranslateButton style={{display: 'none'}} onClick={() => setLocale(nextLocale)}>
           {nextLocale === "pt" ? (
             <TranslateButtonContent
               symbol="🇧🇷"

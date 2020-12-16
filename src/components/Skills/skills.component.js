@@ -10,7 +10,7 @@ const skillsCollection = [
   },
   {
     title:
-      "Angular JS, Ionic 1.x, NodeJS, React, React Native, Redux, Redux Thunk;",
+      "Angular JS, Ionic 1.x, NodeJS, React, Redux, Redux Thunk, React Native;",
   },
   {
     title: "Tests with Jest and Enzyme;",
@@ -22,7 +22,7 @@ const skillsCollection = [
     title: "GIT, Scrum workflow;",
   },
   {
-    title: "UI Interface Design with Figma / Adobe;",
+    title: "UI Interface Design with Figma and Adobe softwares;",
   },
 ];
 
